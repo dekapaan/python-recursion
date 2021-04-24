@@ -7,6 +7,7 @@ def pal(_str):
     else:
         return pal(_str[1:-1])
 
+
 try:
     number = str(int(input("Enter integer: ")))
     result = pal(number)
@@ -22,7 +23,10 @@ def iseven(x):
     return iseven(x-2)
 
 
-no = int(input("Enter integer: "))
-result2 = iseven(no)
-print("Even status:", result2)
+try:
+    no = str(int(input("Enter integer: ")))
+    result2 = iseven(no)
+    print("Even status:", result2)
+except ValueError:
+    print("Not a number")
 
