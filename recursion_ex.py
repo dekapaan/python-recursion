@@ -7,10 +7,12 @@ def pal(_str):
     else:
         return pal(_str[1:-1])
 
-
-number = input("Enter integer: ")
-result = pal(number)
-print(result)
+try:
+    number = str(int(input("Enter integer: ")))
+    result = pal(number)
+    print("Palindrome status:", result)
+except ValueError:
+    print("Not a number")
 
 
 # Task2
