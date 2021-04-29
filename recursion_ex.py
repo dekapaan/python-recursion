@@ -24,9 +24,8 @@ def iseven(x):
 
 
 try:
-    no = str(int(input("Enter integer: ")))
+    no = int(input("Enter integer: "))
     result2 = iseven(no)
     print("Even status:", result2)
 except ValueError:
     print("Not a number")
-
